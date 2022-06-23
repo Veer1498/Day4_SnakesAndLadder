@@ -11,6 +11,7 @@ public class snakeLadderProblem {
 		// TODO Auto-generated method stub
 		System.out.println("Welcome to Snakes & Ladders Game");
 	int playerPosition =0;
+	int i =0;
 	System.out.println("player position is " + playerPosition);
 		System.out.println("Roll Dice to Move");
 		while(playerPosition != WINNING_POSITION) {
@@ -35,9 +36,12 @@ public class snakeLadderProblem {
 			if (playerPosition < 0 ) {
 				playerPosition =0;
 			}
+			i++;
 		}
 			System.out.println("player actual Position is " + playerPosition);
-		}
-	}
+			System.out.println("Total Moves " +i++);
 
+		}
+		
+	}
 } 
